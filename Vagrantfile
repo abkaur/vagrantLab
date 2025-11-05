@@ -4,6 +4,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
     sudo apt-get install -y apache2 git
-    echo "Hello from the UPDATED Vagrant setup with Git installed!" | sudo tee /var/www/html/index.html
+    echo "Hello Again!!!!! from the UPDATED Vagrant setup with Git installed!" | sudo tee /var/www/html/index.html
   SHELL
 end
